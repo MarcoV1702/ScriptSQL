@@ -95,8 +95,7 @@ CREATE TABLE RESERVA
        FECHA_HORA DATETIME NOT NULL,                              /* FECHA_HORA */
        METODO_PAGO BIGINT NOT NULL,                              
        PRIMARY KEY(NUMERO_RESERVA),
-       FOREIGN KEY(DNI)
-          REFERENCES CLIENTE(DNI)
+       FOREIGN KEY(DNI)REFERENCES CLIENTE(DNI)
        );
 
 
